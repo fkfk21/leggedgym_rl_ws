@@ -86,7 +86,7 @@ sudo apt install python3-vcstool
 
 1. Clone this repository
 ```bash
-git clone git@github.com:fkfk21/leggedgym_rl_ws.git
+git clone -b mevius git@github.com:fkfk21/leggedgym_rl_ws.git
 ```
 
 2. Download Isaac Gym
