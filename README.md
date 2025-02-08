@@ -4,11 +4,17 @@ This workspace is used to solve the dependencies of python packages and make the
 
 The installation process mainly follows [here](https://github.com/leggedrobotics/legged_gym).
 
+
+## Acknowledgements
+
+The legged\_gym repository used for training mevius: https://github.com/haraduka/legged_gym/tree/mevius
+
+Main Project source: https://github.com/haraduka/mevius
+
+
 ## System (verified by developer)
 
 OS: Ubuntu 22.04
-
-
 
 ## dependency
 
@@ -99,6 +105,12 @@ Execute following commands.
 ```bash
 cd leggedgym_rl_ws
 vcs import . < leggedgym.repos
+
+cd legged_gym
+git remote add haraduka git@github.com:haraduka/legged_gym.git
+git fetch haraduka
+git checkout haraduka/mevius
+
 # (if needed execute ->) eval $(pyenv init - bash)
 # (if needed execute ->) sudo apt install libreadline-dev
 
@@ -120,17 +132,17 @@ source (poetry env info --path)/bin/activate.fish
 
 ### Start training
 ```bash
-python legged_gym/legged_gym/scripts/train.py --task=anymal_c_flat
+python legged_gym/legged_gym/scripts/train.py --task=mevius
 ```
 
 with options
 ```bash
-python legged_gym/legged_gym/scripts/train.py --task=anymal_c_flat --num_envs 1024 --max_iterations 1000
+python legged_gym/legged_gym/scripts/train.py --task=mevius --num_envs 1024 --max_iterations 1000
 ```
 
 to resume training
 ```bash
-python legged_gym/legged_gym/scripts/train.py --task=anymal_c_flat --resume
+python legged_gym/legged_gym/scripts/train.py --task=mevius --resume
 ```
 
 to see other options
@@ -147,6 +159,6 @@ poetry run tensorboard --logdir ./legged_gym/logs
 
 ### play training result 
 ```bash
-python legged_gym/legged_gym/scripts/play.py --task=anymal_c_flat
+python legged_gym/legged_gym/scripts/play.py --task=mevius
 ```
 
