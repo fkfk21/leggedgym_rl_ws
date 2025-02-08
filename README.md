@@ -11,7 +11,9 @@ OS: Ubuntu 22.04
 
 - [pyenv](https://github.com/pyenv/pyenv) (for virtual env)
 - [poetry](https://python-poetry.org/) (for virtual env)
-- [vcs-tools](https://github.com/dirk-thomas/vcstool) (for clone )
+- [vcs-tools](https://github.com/dirk-thomas/vcstool) (for clone repositories)
+
+<details><summary>dependency installation</summary>
 
 ### pyenv installation
 
@@ -32,7 +34,7 @@ echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
 ```
 if you want not to always activate pyenv, execute `eval $(pyenv init - bash)` just before `poetry install --no-root` 
 
-## poetry installation
+### poetry installation
 
 This introduction follows [here](https://python-poetry.org/docs/#installation)
 
@@ -58,11 +60,13 @@ poetry config virtualenvs.in-project true
 ```
 
 
-## vcs-tool installation
+### vcs-tool installation
 
 ```bash
 sudo apt install python3-vcstool
 ```
+</details>
+
 
 ## Installation
 
