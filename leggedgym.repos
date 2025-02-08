@@ -1,0 +1,10 @@
+repositories:
+  legged_gym:
+    type: git
+    url: git@github.com:leggedrobotics/legged_gym.git
+    version: master
+  rsl_rl:
+    type: git
+    url: git@github.com:leggedrobotics/rsl_rl.git
+    version: v1.0.2 
+

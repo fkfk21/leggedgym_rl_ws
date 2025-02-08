@@ -1,0 +1,6 @@
+isaacgym
+legged_gym
+rsl_rl
+
+# in practice, this is needed but ignored for other pytorch and CUDA version user
+poetry.lock  
