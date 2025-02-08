@@ -1,17 +1,25 @@
 # Legged Gym RL workspace
 
+This workspace is used to solve the dependencies of python packages and make the installation easy.
 
-mainly follow [here](https://github.com/leggedrobotics/legged_gym)
+The installation process mainly follows [here](https://github.com/leggedrobotics/legged_gym).
 
-## System
+## System (verified by developer)
+
 OS: Ubuntu 22.04
+
 
 
 ## dependency
 
 - [pyenv](https://github.com/pyenv/pyenv) (for virtual env)
 - [poetry](https://python-poetry.org/) (for virtual env)
-- [vcs-tools](https://github.com/dirk-thomas/vcstool) (for clone repositories)
+- [vcs-tool](https://github.com/dirk-thomas/vcstool) (for clone repositories)
+
+### version verified by developer
+- pyenv: 2.4.1
+- poetry: 1.7.1
+- vcs-tool: 0.3.0
 
 <details><summary>dependency installation</summary>
 
